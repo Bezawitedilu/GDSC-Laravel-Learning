@@ -33,8 +33,18 @@ include('../header.php');
 ?>
 
 <div class="container mx-auto mt-8 p-8 bg-white rounded-lg shadow-md max-w-md">
-    <h2 class="text-2xl font-bold mb-6">Publish Post</h2>
-    <!-- Form for publishing post -->
+    <h2 class="text-2xl font-bold mb-6">Create Post</h2>
+    <!-- Form for creating a new post -->
+    <form action="" method="POST">
+        <label for="title" class="block text-sm font-medium text-gray-700">Title:</label>
+        <input type="text" name="title" required class="mt-1 p-2 w-full border rounded-md">
+
+        <label for="content" class="block mt-4 text-sm font-medium text-gray-700">Content:</label>
+        <textarea name="content" rows="4" required class="mt-1 p-2 w-full border rounded-md"></textarea>
+
+        <button type="submit" class="mt-4 bg-indigo-600 text-white p-2 rounded-md">Create Post</button>
+    </form>
 </div>
 
 <?php include('../footer.php'); ?>
+gi a
