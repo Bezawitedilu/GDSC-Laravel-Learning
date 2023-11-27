@@ -1,0 +1,16 @@
+[
+    {
+      "title": "First Blog Post",
+      "content": "This is the content of the first blog post.",
+      "author": "John Doe",
+      "timestamp": "2023-11-27T12:00:00Z"
+    },
+    {
+      "title": "Second Blog Post",
+      "content": "This is the content of the second blog post.",
+      "author": "Jane Doe",
+      "timestamp": "2023-11-28T10:30:00Z"
+    }
+  
+  ]
+  
