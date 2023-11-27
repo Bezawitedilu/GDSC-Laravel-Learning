@@ -1,0 +1,11 @@
+// tailwind.config.js
+
+module.exports = {
+  // ... other configuration ...
+
+  plugins: [
+    // ... other plugins ...
+
+    require('@tailwindcss/ui'),
+  ],
+};
