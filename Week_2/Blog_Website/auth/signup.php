@@ -10,6 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    // For testing purposes, let's print the entered values
+    echo "Entered username: $username <br>";
+    echo "Entered password: $password <br>";
+
+    // In a real application, you would hash the password before storing it
+    // $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+    // Redirect to the login page for now
     header('Location: login.php');
     exit();
 }

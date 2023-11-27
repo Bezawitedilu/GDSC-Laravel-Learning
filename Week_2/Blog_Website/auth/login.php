@@ -10,12 +10,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    // For testing purposes, let's print the entered values
+    echo "Entered username: $username <br>";
+    echo "Entered password: $password <br>";
+
+    // For testing purposes, hardcoded values
     if ($username === 'demo' && $password === 'password') {
         $_SESSION['user_id'] = 1;
         header('Location: ../posts/index.php');
         exit();
     } else {
-        $error = "Invalid username or password";
+        $error = "Incorrect username or password";
     }
 }
 
@@ -27,7 +32,7 @@ include('../header.php');
     <form action="" method="POST">
         <label for="username" class="block text-sm font-medium text-gray-700">Username:</label>
         <input type="text" name="username" required class="mt-1 p-2 w-full border rounded-md">
-        
+
         <label for="password" class="block mt-4 text-sm font-medium text-gray-700">Password:</label>
         <input type="password" name="password" required class="mt-1 p-2 w-full border rounded-md">
 
