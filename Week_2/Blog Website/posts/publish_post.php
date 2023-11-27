@@ -33,6 +33,6 @@ include('../header.php');
 ?>
 
 <h2>Publish Post</h2>
-<!-- Form for publishing post -->
+
 
 <?php include('../footer.php'); ?>
