@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Password is correct
             // Perform login actions
             $_SESSION['username'] = $username; // Store the username in the session, for example
-            header('index.php'); // Redirect to the index or another appropriate location
+            header('Location: ../posts/index.php'); // Redirect to the index
             exit();
         } else {
             // Incorrect password
