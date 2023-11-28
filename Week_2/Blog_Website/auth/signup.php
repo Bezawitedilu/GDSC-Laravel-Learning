@@ -2,13 +2,13 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve user input from the signup form
+    //asks user to input username and password
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Validate the inputs (you can add more validation logic here)
+    //validation to check if the user is taken or not
     if (empty($username) || empty($password)) {
-        // Handle validation error (e.g., redirect back to the signup page with an error message)
+        // Handle validation error ketesasate we go back to signup error or 404 page, TDLR: Add a 404 not found page
         header('Location: signup.php?error=Please fill in all fields');
         exit();
     }
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Check if the username is already taken
     if (isset($userData[$username])) {
-        // Handle username already taken (e.g., redirect back to the signup page with an error message)
+        // Handle username already taken, rediredct saying that it is taken or 404 page
         header('Location: signup.php?error=Username already taken');
         exit();
     }
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Hash the password (make sure to use a strong hashing algorithm)
     $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-    // Add the new user to the user data array
+    // Add the new user to the user data array in file users.json
     $userData[$username] = [
         'username' => $username,
         'password' => $hashedPassword,

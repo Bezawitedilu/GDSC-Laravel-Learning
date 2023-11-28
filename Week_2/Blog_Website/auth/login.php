@@ -2,7 +2,7 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve user input from the login form
+    // Get user input from the login form
     $username = $_POST['username'];
     $enteredPassword = $_POST['password'];
 
@@ -25,13 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         } else {
             // Incorrect password
-            // Redirect or display an error message
+            // Display an error message
             header('Location: login.php?error=Incorrect password');
             exit();
         }
     } else {
         // Username does not exist
-        // Redirect or display an error message
+        // Display an error message 
         header('Location: login.php?error=User not found');
         exit();
     }
