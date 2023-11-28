@@ -31,7 +31,7 @@ if (isset($_GET['postIndex'])) {
         <button type="submit" class="mt-4 bg-indigo-600 text-white p-2 rounded-md">Update Post</button>
     </form>
 
-    <!-- Add a link to go back to the list of posts -->
+    <!-- Link to go back to the list of posts -->
     <a href="index.php" class="text-indigo-600 hover:text-indigo-500">Back to All Posts</a>
 </div>
 

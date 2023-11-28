@@ -21,8 +21,6 @@
 <div class="container mx-auto mt-8 p-8 bg-white rounded-lg shadow-md max-w-md">
     <h2 class="text-2xl font-bold mb-6">Welcome to Bezawit's Blog</h2>
 
-    <!-- You can add additional content here for your welcome page -->
-
 </div>
 
 </body>

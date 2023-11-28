@@ -23,7 +23,7 @@ if (isset($_GET['postIndex'])) {
     <p class="text-sm text-gray-700">Author: <?= $post['author']; ?></p>
     <hr class="my-4">
 
-    <!-- Add a button to go back to the list of posts -->
+    <!-- Button to go back to the list of posts -->
     <a href="index.php" class="text-indigo-600 hover:text-indigo-500">Back to All Posts</a>
 </div>
 
