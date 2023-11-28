@@ -38,6 +38,9 @@ if (isset($_GET['postIndex'])) {
     var formData = new FormData(this);
 
     // AJAX request to handle form submission
+    //this script is helpss to asynchronously send a POST request to 'edit_post.php', 
+    //and after a successful update, it redirects the user to 'index.php'. (w3 has a better explanation)
+    //https://www.w3schools.com/js/js_ajax_http.asp
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'delete_post.php', true);
     xhr.onload = function () {
