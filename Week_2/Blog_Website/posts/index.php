@@ -27,7 +27,7 @@ include('../header.php');
             // Add buttons for edit and delete with the corresponding post index
             echo "<a href='edit_post.php?postIndex=$index' class='text-indigo-600 hover:text-indigo-500'>Edit</a>";
             echo "<a href='delete_post.php?postIndex=$index' class='text-red-600 hover:text-red-500 ml-2'>Delete</a>";
-            
+
             echo "</div>";
         }
         ?>

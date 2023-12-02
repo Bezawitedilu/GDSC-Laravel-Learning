@@ -44,8 +44,8 @@ if (isset($_GET['postIndex'])) {
     // AJAX request to handle form submission
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'edit_post.php', true);
-    xhr.onload = function () {
-      if (xhr.status === 200) {
+    xhr.onreadystatechange = function () {
+      if (xthis.readyState === 4 && hr.status === 200) {
         // Redirect to the list of posts after successful update
         window.location.href = 'index.php';
       } else {

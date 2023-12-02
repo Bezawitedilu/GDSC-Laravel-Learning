@@ -13,8 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $timestamp = date('Y-m-d H:i:s');
 
     $posts = json_decode(file_get_contents('../data/posts.json'), true);
+    
+    $id = strtotime('now');
 
     $newPost = array(
+        'id' => $id,
         'title' => $title,
         'content' => $content,
         'author' => $author,
