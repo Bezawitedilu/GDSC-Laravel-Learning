@@ -91,3 +91,49 @@ foreach($animals as $animal){
 }
 
 -->
+
+
+
+<!-- final and abstract are keywords used to control the 
+beahavior of classes and methods.
+
+final keywoard is class, method or property can not be extended overriden or furhter modified by child classes
+
+final class FinalClass{
+
+}
+
+class ParentClass{
+    final public function myMethod(){
+
+    }
+
+    class childClass extends ParentClass{
+        //impossibke
+    }
+
+    final public $myProperty = 10;
+
+
+    abstract cant be instantiated on its own, it serves as a blueprint for other classes
+    abstract class must be extended 
+
+    abstract class Shape{
+        abstract public function calculateArea()
+    }
+
+    class Circle extends Shape{
+        private $radius;
+        public function __construct($radius){
+            $this->radius = $radius;
+        }
+
+        publuc function calculateArea(){
+            return pi()* $this->radiys * $this->radius;
+        }
+    }
+
+    $circle = new Circle(5);
+    cho $circle->calculateArea();
+
+-->
